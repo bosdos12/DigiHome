@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="CSS/add.css">
+    <link rel="stylesheet" href="CSS/global.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" class="logo"><img src="Component/logo-Meta.png">
+            DiHome</a>
+        </div>
+        <div>
+            <a class="add"><i class="fa-solid fa-plus"></i> Add</a> 
+        </div>
+    </header>
+    <div class="baslik">
+        <input type="text" placeholder="Your Home"><i class="fa-solid fa-house"></i>
+    </div>
+    <div class="container">
+
+        <div class="cards">
+            <div class="card">
+                <select>
+                <option selected><p><i class="fa-solid fa-house"></i></p></option>
+                <option><p><i class="fa-solid fa-house"></i></p></option>
+                <option><i class="fa-solid fa-house"></i></option>
+                <option><i class="fa-solid fa-house"></i></option>
+                </select>
+                <input type="text" placeholder="Light Bulb">
+                <input type="checkbox" id="chek0" class="check">
+                <label for="chek0" class="buton"></label>
+                <button class="connect" onclick="add()">Connect</button>
+                <button onclick="add()">Add</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="JS/index.js"></script>

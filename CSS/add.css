@@ -1,0 +1,257 @@
+@font-face {
+    font-family: myFont;
+    src: url(Component/TT.otf);
+}
+@font-face {
+    font-family: maFont;
+    src: url(Component/GaleySemiB.ttf);
+}
+@font-face {
+    font-family: aceh;
+    src: url(Component/Aceh-Light.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: sans-serif , "myFont";
+}
+body{
+    background-color: rgba(20, 20, 20);
+    overflow: hidden;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(255, 255, 255,0.1);
+    transition: 0.6s;
+}
+header img{
+    width: 40px;
+}
+header .logo{
+    color: #0177ED;
+    font-size: 21px;
+    
+    font-weight: 600px;
+    margin: 2rem 0.7rem 2rem 0.2rem;
+}
+header .add{
+    color: #0177ED;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "maFont";
+}
+header .add i{
+    font-size: 21px;
+}
+.baslik{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.baslik input{
+    color: #0177ED;
+    font-family: "maFont";
+    border-radius: 5px;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 2px solid #0177ED;
+    margin-right: 5px;
+    margin-top: 0px;
+    text-align: center;
+
+}
+.baslik i{
+    font-size: 28px;
+    color: #0177ED;
+    background-color: transparent;
+    border-radius: 100px;
+}
+.container{
+    display: flex;
+    overflow: hidden;
+    height: 80vh;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: calc(100% - 20px);
+    gap: 8px;
+    max-width: 916px;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255,0.02);
+    border: 1px solid rgba(255, 255, 255,0.1);
+    height: 500px;
+    width: 60%;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.card::before{
+    background: radial-gradient(
+        1250px circle at 230px 230px,
+        rgba(255 ,255 ,255 , 0.06),
+        transparent 30%
+    );
+    border-radius: inherit;
+    content:"";
+    height: 100%;
+    left:0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+}
+.card select{
+    display: flex;
+    z-index: 3;
+    width: 180px;
+    height: 180px;
+    background-color: #0177ED;
+    border-radius: 500px;
+    color: rgba(20, 20, 20);
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    text-align: center;
+    transition: 1s;
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.25), 0px 0px 15px rgb(255, 255, 255 , 22%);;
+}   
+.card select i{
+    color: rgba(20, 20, 20);
+    font-size: 10px;
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.25), 0px 0px 40px rgb(255, 255, 255 , 22%);;
+}
+.card select:hover{
+    width: 200px;
+    height: 200px;
+}
+.card option{
+    color: rgba(20, 20, 20);
+    font-size: 50px;
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.card button{
+    margin-top: 30px;
+    width: 80px;
+    height: 30px;
+    font-size: 20px;
+    background-color: #0177ED;
+    border: 2px solid rgba(255, 255, 255,0.02);
+    border-radius: 18px;
+    padding: 0px 5px 0px 5px;
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.25), 0px 0px 15px rgb(255, 255, 255 , 22%);;
+}
+.card .connect{
+    width: 120px;
+}
+.card i{
+    color:  rgba(20, 20, 20);
+    border-radius: 80px;
+    padding: 12px;
+    font-size: 20px;
+}
+.card input {
+    margin-top: 20px;
+    font-size: 23px;
+    color: #0177ED;
+    border: 2px solid #0177ED;
+    border-radius: 5px;
+    font-family: "maFont";
+    z-index: 3;
+    text-align: center;
+    text-justify: center;
+}
+/*Card Buton*/
+.check{
+    margin-top: 20px;
+    z-index: 3;
+}
+.buton{
+    background-color: #f2f2f2;
+    width: 40px;
+    height: 20px;
+    border-radius: 40px;
+    z-index: 3;
+    margin-top: 20px;
+}
+.buton::before{
+    position: absolute;
+    content: '';
+    background-color: #0177ED;
+    width: 18px;
+    height: 18px;
+    border-radius: 200px;
+    margin: 1px;
+    transition: 0.2s;
+}
+.check:checked + .buton{
+    background-color: #0177ED;
+}
+.check:checked + .buton::before{
+    background-color: #f2f2f2;
+    transform: translateX(20px);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.3), 0px 0px 40px rgb(255, 255, 255 , 60%);
+}
+.check{
+    display: none;
+}
+@media screen and (max-width: 1060px) {
+    header{
+        height: 40px;
+    }
+    header img{
+        width: 30px;
+    }
+    header .logo{
+        font-size: 18px;
+    }
+    .baslik {
+        margin-top: 24px;
+    }
+    .cards{
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+    }
+    .card{
+        width: 40%;
+        height: 200px;
+    }
+    .container{
+        height: 84vh;
+    }
+}
